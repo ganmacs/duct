@@ -1,0 +1,75 @@
+AllCops:
+  Exclude:
+    - "vendor/**/*"
+    - "db/schema.rb"
+  DisplayCopNames: true
+  TargetRubyVersion: 2.3
+
+Style/AndOr:
+  EnforcedStyle: conditionals
+
+Style/AsciiComments:
+  Enabled: false
+
+
+Style/DeprecatedHashMethods:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/EmptyElse:
+  EnforcedStyle: empty
+
+Style/FormatString:
+  EnforcedStyle: percent
+
+Style/HashSyntax:
+  Exclude:
+    - "**/*.rake"
+    - "Rakefile"
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/PredicateName:
+  NamePrefixBlacklist:
+    - "is_"
+    - "have_"
+  NamePrefix:
+    - "is_"
+    - "have_"
+
+Style/SignalException:
+  EnforcedStyle: only_raise
+
+Style/SingleLineBlockParams:
+  Enabled: false
+
+Lint/UnderscorePrefixedVariableName:
+  Enabled: false
+
+
+##################### Metrics ##################################
+
+Metrics/AbcSize:
+  Max: 30
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+Metrics/LineLength:
+  Max: 160
+  Exclude:
+    - "db/migrate/*.rb"
+
+Metrics/MethodLength:
+  Max: 20
+  Exclude:
+    - "db/migrate/*.rb"
+
+Metrics/PerceivedComplexity:
+  Max: 8
